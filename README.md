@@ -1,0 +1,5 @@
+# Hashtables
+A programme to use and test the 3 main collision resolution schemes for hashtables 
+
+
+The object orientated design was made with code reuse being a major consideration. For all 3 schemes, there are frequent overlaps in both instance variables as well as methods. It is for this reason that inheritance was utilised. A parent class, hashtable, was developed to contain the overlapping elements. All 3 schemes extend this class and override certain methods that are not the same. For example, every hash table uses the same initial hash value, and so the hashVal method is found in the parent to be used by the children. Each hash table has a unique way of inserting and finding datapoints, and so they override the abstract methods found in the parent. Another benefit of inheritance and using abstract classes is that the driver app, PowerHashApp, only has to initialise something of type hashtable. Once an input has been specified, the hashtable is instantiated with the relevant schemes constructor being called. 
